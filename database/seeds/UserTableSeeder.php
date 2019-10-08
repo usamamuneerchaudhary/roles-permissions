@@ -14,7 +14,6 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-
 	    $dev_role = Role::where('slug','developer')->first();
 	    $manager_role = Role::where('slug', 'manager')->first();
 	    $dev_perm = Permission::where('slug','create-tasks')->first();
@@ -22,7 +21,7 @@ class UserTableSeeder extends Seeder
 
 	    $developer = new User();
 	    $developer->name = 'Usama Muneer';
-	    $developer->email = 'usama@protech.studio';
+	    $developer->email = 'usama@thewebtier.com';
 	    $developer->password = bcrypt('secret');
 	    $developer->save();
 	    $developer->roles()->attach($dev_role);
@@ -30,8 +29,8 @@ class UserTableSeeder extends Seeder
 
 
 	    $manager = new User();
-	    $manager->name = 'Maavuz Saif';
-	    $manager->email = 'maavuz@protech.studio';
+	    $manager->name = 'Manager';
+	    $manager->email = 'manager@thewebtier.com';
 	    $manager->password = bcrypt('secret');
 	    $manager->save();
 	    $manager->roles()->attach($manager_role);
