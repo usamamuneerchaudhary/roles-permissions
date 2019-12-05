@@ -11,7 +11,7 @@
     "php": "^7.3.7",
     "fideloper/proxy": "^4.0",
     "laravel/framework": "^6.0",
-    "laravel/tinker": "^1.0"
+    "laravel/tinker": "^2.0"
   },
   "require-dev": {
     "filp/whoops": "^2.0",
